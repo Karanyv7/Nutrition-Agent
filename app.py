@@ -110,12 +110,12 @@ def get_watsonx_model():
         api_key=IBM_API_KEY,
     )
     params = {
-        GenParams.MAX_NEW_TOKENS: 1024,
-        GenParams.MIN_NEW_TOKENS: 50,
-        GenParams.TEMPERATURE: 0.7,
+        GenParams.MAX_NEW_TOKENS: 350,
+        GenParams.MIN_NEW_TOKENS: 0,
+        GenParams.TEMPERATURE: 0.4,
         GenParams.TOP_P: 0.9,
         GenParams.TOP_K: 50,
-        GenParams.REPETITION_PENALTY: 1.1,
+        GenParams.REPETITION_PENALTY: 1.2,
         GenParams.STOP_SEQUENCES: ["Human:", "User:", "\n\nHuman"],
     }
     return ModelInference(
