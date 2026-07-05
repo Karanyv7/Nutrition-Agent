@@ -3,3 +3,4 @@ flask-cors==4.0.1
 python-dotenv==1.0.1
 ibm-watsonx-ai==1.1.2
 gunicorn==22.0.0
+pandas==2.1.3
